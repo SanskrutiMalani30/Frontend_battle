@@ -67,9 +67,9 @@ export const ScrollBrainManager: React.FC = () => {
         targetScale = (cardRect.width / heroRect.width) * 2.2; // Scale up the docked brain by 120% relative to the card anchor
       }
 
-      // Centers of Hero anchor
+      // Centers of Hero anchor (shifted down by 85px to clear the navbar)
       const heroCenterX = heroRect.left + heroRect.width / 2;
-      const heroCenterY = heroRect.top + heroRect.height / 2;
+      const heroCenterY = heroRect.top + heroRect.height / 2 + 85;
 
       // Interpolate values
       const cx = cardAnchor ? heroCenterX + (cardCenterX - heroCenterX) * easedP : heroCenterX;

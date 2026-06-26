@@ -76,7 +76,7 @@ const FAQComponent: React.FC = () => {
         ref={glow1Ref}
         className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full blur-[125px] pointer-events-none transition-transform duration-300 ease-out" 
         style={{
-          background: 'radial-gradient(circle, rgba(168,85,247,0.1) 0%, rgba(236,72,153,0.05) 60%, rgba(0,0,0,0) 100%)',
+          background: 'radial-gradient(circle, rgba(168,85,247,0.20) 0%, rgba(236,72,153,0.10) 60%, rgba(0,0,0,0) 100%)',
           willChange: 'transform'
         }}
       />
@@ -84,7 +84,7 @@ const FAQComponent: React.FC = () => {
         ref={glow2Ref}
         className="absolute top-10 left-10 w-[380px] h-[380px] rounded-full blur-[110px] pointer-events-none transition-transform duration-300 ease-out" 
         style={{
-          background: 'radial-gradient(circle, rgba(6,182,212,0.08) 0%, rgba(59,130,246,0.04) 60%, rgba(0,0,0,0) 100%)',
+          background: 'radial-gradient(circle, rgba(6,182,212,0.18) 0%, rgba(59,130,246,0.10) 60%, rgba(0,0,0,0) 100%)',
           willChange: 'transform'
         }}
       />

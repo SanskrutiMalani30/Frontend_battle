@@ -297,7 +297,7 @@ const TestimonialsComponent: React.FC = () => {
         ref={glow1Ref}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[750px] rounded-full blur-[150px] pointer-events-none transition-transform duration-300 ease-out" 
         style={{
-          background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(34,211,238,0.05) 50%, rgba(0,0,0,0) 100%)',
+          background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, rgba(34,211,238,0.10) 50%, rgba(0,0,0,0) 100%)',
           willChange: 'transform'
         }}
       />
@@ -305,7 +305,7 @@ const TestimonialsComponent: React.FC = () => {
         ref={glow2Ref}
         className="absolute bottom-10 left-10 w-[350px] h-[350px] rounded-full blur-[110px] pointer-events-none transition-transform duration-300 ease-out" 
         style={{
-          background: 'radial-gradient(circle, rgba(168,85,247,0.12) 0%, rgba(236,72,153,0.06) 60%, rgba(0,0,0,0) 100%)',
+          background: 'radial-gradient(circle, rgba(168,85,247,0.22) 0%, rgba(236,72,153,0.12) 60%, rgba(0,0,0,0) 100%)',
           willChange: 'transform'
         }}
       />

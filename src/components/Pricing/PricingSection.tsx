@@ -49,7 +49,7 @@ const PricingSectionComponent: React.FC = () => {
         ref={glow1Ref}
         className="absolute top-1/4 right-1/5 w-[500px] h-[500px] rounded-full blur-[140px] pointer-events-none transition-transform duration-300 ease-out" 
         style={{
-          background: 'radial-gradient(circle, rgba(168,85,247,0.12) 0%, rgba(236,72,153,0.06) 60%, rgba(0,0,0,0) 100%)',
+          background: 'radial-gradient(circle, rgba(168,85,247,0.22) 0%, rgba(236,72,153,0.12) 60%, rgba(0,0,0,0) 100%)',
           willChange: 'transform'
         }}
       />
@@ -57,7 +57,7 @@ const PricingSectionComponent: React.FC = () => {
         ref={glow2Ref}
         className="absolute bottom-1/4 left-1/5 w-[450px] h-[450px] rounded-full blur-[120px] pointer-events-none transition-transform duration-300 ease-out" 
         style={{
-          background: 'radial-gradient(circle, rgba(59,130,246,0.12) 0%, rgba(34,211,238,0.06) 60%, rgba(0,0,0,0) 100%)',
+          background: 'radial-gradient(circle, rgba(59,130,246,0.20) 0%, rgba(34,211,238,0.10) 60%, rgba(0,0,0,0) 100%)',
           willChange: 'transform'
         }}
       />

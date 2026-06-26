@@ -63,7 +63,7 @@ export const ScrollBrainManager: React.FC = () => {
         easedP = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
         cardCenterX = cardRect.left + cardRect.width / 2;
-        cardCenterY = cardRect.top + cardRect.height / 2;
+        cardCenterY = cardRect.top + cardRect.height / 2 + 25;
         targetScale = (cardRect.width / heroRect.width) * 2.2; // Scale up the docked brain by 120% relative to the card anchor
       }
 

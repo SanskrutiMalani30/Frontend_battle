@@ -62,7 +62,7 @@ export const ScrollBrainManager: React.FC = () => {
 
         cardCenterX = cardRect.left + cardRect.width / 2;
         cardCenterY = cardRect.top + cardRect.height / 2;
-        targetScale = cardRect.width / heroRect.width;
+        targetScale = (cardRect.width / heroRect.width) * 1.4;
       }
 
       // Centers of Hero anchor

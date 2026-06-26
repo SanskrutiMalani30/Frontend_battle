@@ -19,7 +19,7 @@ export const BrainCanvas: React.FC = () => {
 
     // 2. Camera setup
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-    camera.position.z = 5.2;
+    camera.position.z = 4.2;
 
     // 3. Renderer setup
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });

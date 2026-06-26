@@ -41,6 +41,8 @@ export const ScrollBrainManager: React.FC = () => {
       let cardCenterY = 0;
       let targetScale = 1.0;
 
+      const baseHeroScale = 1.5; // Scale up the brain in the Hero section by 50%
+
       if (cardAnchor) {
         const cardRect = cardAnchor.getBoundingClientRect();
 
@@ -62,7 +64,7 @@ export const ScrollBrainManager: React.FC = () => {
 
         cardCenterX = cardRect.left + cardRect.width / 2;
         cardCenterY = cardRect.top + cardRect.height / 2;
-        targetScale = (cardRect.width / heroRect.width) * 1.4;
+        targetScale = (cardRect.width / heroRect.width) * 2.2; // Scale up the docked brain by 120% relative to the card anchor
       }
 
       // Centers of Hero anchor
@@ -72,7 +74,7 @@ export const ScrollBrainManager: React.FC = () => {
       // Interpolate values
       const cx = cardAnchor ? heroCenterX + (cardCenterX - heroCenterX) * easedP : heroCenterX;
       const cy = cardAnchor ? heroCenterY + (cardCenterY - heroCenterY) * easedP : heroCenterY;
-      const scale = cardAnchor ? 1.0 + (targetScale - 1.0) * easedP : 1.0;
+      const scale = cardAnchor ? baseHeroScale + (targetScale - baseHeroScale) * easedP : baseHeroScale;
       const rotate = cardAnchor ? easedP * 360 : 0; // Rotate one full turn smoothly during transition
 
       // Perform transform updates on the GPU for 60fps scrolling
